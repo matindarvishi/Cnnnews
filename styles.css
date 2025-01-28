@@ -1,0 +1,133 @@
+header {
+  background-color: #ffffff;
+  color: rgba(255, 5, 5, 0.671);
+  padding: 5em;
+  margin: 1em;
+  border-radius: 0.5em;
+  text-align: center;
+  font-size: medium;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px 10px 0 0;
+
+}
+
+/* pagestart */
+h1 , h2 , h3 , h4 , h5 , h6 {
+  color: #333;
+  text-align: center;
+}
+.topnav {
+  padding: 0;
+  margin: 0;
+  border-radius: 0.5;
+  font-size: large;
+}
+/* top navigation bar */
+.topnav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display:flex;
+  justify-content: center;
+}
+.topnav button {
+  background-color: #ff0000;
+  color: rgb(0, 0, 0);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  border: none;
+  cursor: pointer;
+  margin: 0.5em;
+}
+.topnav :hover{
+  color: #ff0000;
+}
+
+nav , nav a {
+  color: #000000;
+  background-color: rgb(167, 255, 255);
+}
+/* End of top nav */
+
+/* Flex container */
+.container {
+  padding: 10% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container a {
+  color: white;
+  background-color: rgb(255, 255, 255);
+}
+.container  :hover {
+  color: rgb(255, 0, 0);
+}
+.article-content {
+  background-color: white;
+  color: black;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  text-align: left;
+  font-size: large;
+  overflow: auto;
+  max-height: 150px;
+}
+/* Media query for phones */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topnav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topnav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page {
+    width: 100%;
+    margin: 0.5em 0;
+    display: block;
+  }
+
+  .article-content {
+    max-height: none;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }}
+/* End of media query */
+.logo {
+  text-align: center;
+  font-size: large;
+  background-color: #000000;
+  color: rgb(255, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
